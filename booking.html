@@ -1,0 +1,62 @@
+<div class="box-findTable">
+        <h4><span>1. Find a table</span></h4>
+        <div class="box-findTableBox">
+            <ul class="list-findTableSelect">
+                <!--<li><strong>Select Restaurant</strong></li>-->
+                <li id="restaurant_li">
+                    <div class="input-group">
+                        <select class="custom-select" id="restaurant_id" style="width:100%;">
+                            <option value="">Select Restaurant</option>
+                        </select>
+                    </div>
+                </li>
+                <li id="restaurant_error"></li>
+                <!--<li><strong>Select Date</strong></li>-->
+                <li>
+                    <div class="fFbieV box-inputDate">
+                        <div class="dgJVtm" id="selected_date">Select Date</div>
+                        <div class="react-datepicker-wrapper">
+                            <div class="react-datepicker__input-container">
+                                <input class="pickadate" id="input_date" value="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="date_error"></li>
+                <!--<li><strong>Select Persons</strong></li>-->
+                <li>
+                    <div class="input-group">
+                        <select class="custom-select" id="people_list" style="width:100%;">
+                            <option value="1" label="1 person">1 person</option>
+                            <option value="2" label="2 person">2 person</option>
+                            <option value="3" label="3 person">3 person</option>
+                            <option value="4" label="4 person">4 person</option>
+                            <option value="5" label="5 person">5 person</option>
+                            <option value="6" label="6 person">6 person</option>
+                        </select>
+                    </div>
+                </li>
+                <li id="person_error"></li>
+                <li>
+                    <button class="btn btn-findTable" type="button" id="search_slots">FIND A TABLE</button>
+                </li>
+                <li>
+                        <button class="link-btnBook" type="button" id="slots_done">Confirm Booking</button>
+                    </li>
+            </ul>
+            <div class="box-txtNoAvailbility">
+                <!--<p>At the moment, there’s no online availability within 2.5 hours of 7:00 pm. Do you have another time in mind?</p>-->
+                <div class="box-txtNoAvailbilityInn">
+                    <!--<h5>Future availability around 7:00 pm</h5>-->
+                    <span id="booking_full_date"></span>
+                    <ul class="list-timeSel" id="ajx_time_slots"></ul>
+                    <div id='time_slots_error'></div>
+                </div>
+            </div>
+            <div class="box-bookNext">
+                <a class="page1" data-dismiss="modal" data-toggle="modal" href="#page1" style="display:none;">open page1</a>
+                <p class="txt-powered"><span>Powered by Couploy</span></p>
+            </div>
+        </div>
+    </div>
+</div>
